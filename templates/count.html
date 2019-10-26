@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+        <title>login</title>
+        {% load static %}
+      <!-- Bootstrap -->
+        <link href="{% static "/css/bootstrap.css" %}" rel="stylesheet">
+        <!-- font awesome -->
+        <link rel="stylesheet" type="text/css" href="{% static "/css/font-awesome.min.css" %}">
+        <!-- Custom stylesheet -->
+        <link rel="stylesheet" type="text/css" href="{% static "/css/custom/style.css" %}">
+        <!-- jQuery  -->
+        <script src="{% static "/js/jquery-3.1.0.min.js" %}"></script>
+        <script src="{% static "/js/jquery-ui.min.js" %}"></script>
+        <!-- bootstrap -->
+        <script src="{% static "/js/bootstrap.min.js" %}"></script>
+         <script src="{% static "/js/auto-growing.js" %}"></script>
+        <!-- custom -->
+        <script src="{% static "/js/custom/main.js" %}"></script>
+      <style>
+
+
+        h5,h6{
+          color:black;
+          margin:10px 10px 20px 10px;
+        }
+        h4{
+          margin-bottom:15px;
+          margin-top:5px
+        }
+        h3{
+          margin:20px 0px 30px 0px
+        }
+        .link{
+
+          width:100px;
+          height:27px;
+           border:1px solid red;
+          font-size:14px;
+          padding:2px;
+          margin:10px;
+          float:left;
+          display:box;
+          clear:right;
+          background-color:#ff00ff;
+          color:white;
+          font-weight:bold
+
+        }
+      </style>
+    </head>
+    <body>
+        <section class="login_page">
+            <div class="panel" >
+                <div class="head">
+                    <!-- <img src="{% static "/images/logo.png" %}" class="img-responsive"> -->
+                    <a href="{% url 'home' %}" class="btn link">Count again</a>
+
+                    <div class="clearfix"> </div>
+                      <h3>There are {{ count }} words in your text</h3>
+                      <h4><em>Your original text is:</em></h4>
+                      <h6> {{ fulltext }}</h6>
+                      <h5>Word Frequency:</h5>
+                      {% for item,count in sortedwords%}
+                      <p style="padding:5px 0; margin:0px">{{item}} - {{ count }}</p>
+                      {% endfor %}
+                </div>
+
+            </div>
+        </section>
+    </body>
+</html>

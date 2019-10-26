@@ -1,0 +1,269 @@
+#user-profile, #myProfile{
+	margin-top:43px;
+	margin-bottom:43px;
+	padding-top:15px;
+	.media{
+		padding:10px 0;
+		position:relative;
+		.media-left{
+			img{
+				height:90px;
+				width:90px;
+			}
+		}
+		.media-body{
+			padding-left:10px;
+			ul{ font-size:11px;
+				li{
+					padding:4px 0;
+					color:$colorDarkGrey;
+					&:first-child{
+						color:$colorGreen;
+						font-weight:bold;
+					}
+					span{
+						font-weight:bold;
+						color:$colorDarkGrey;
+						padding-right:6px;
+					}
+				}
+			}
+		}
+		.point{
+			position:absolute;
+			right:0;
+			top:10px;
+			background-color:$colorRed;
+			border-radius: 50%;
+			color:white;
+			text-align:center;
+			padding:6px 8px;
+			h1{
+				font-size:17px;
+			}
+			p{
+				font-size:11px;
+			}
+		}
+	}/* media */
+	.subject{
+		position:relative;
+		width:100%;
+		padding-bottom:15px;
+		padding-left:15px;
+		h1{
+			color:$colorDarkGrey;
+			font-size:14.4px;
+			font-weight:bold;
+			padding:15px 0 14px 0;
+		}
+		.scrolling{
+			height:40px;
+			overflow-x: scroll;
+			overflow-y: hidden;
+		}
+		.scrolling::-webkit-scrollbar-track
+		{
+			-webkit-box-shadow: inset 0 0 3px rgb(0,0,0);
+			background-color: white;
+		}
+		.scrolling::-webkit-scrollbar
+		{
+			height:0px;
+			background-color: white;
+		}
+		.scrolling::-webkit-scrollbar-thumb
+		{
+			background-color: white;
+			border: 1px solid white;
+		}
+		ul{
+			
+			width:1000%;
+			--word-break: break-all;
+
+		}
+		li{
+			color:$colorRed;
+			font-size:14.4px;
+			text-transform: uppercase;
+			display:inline;
+			float:left;
+			line-height:25px;
+
+		}
+	}/*subject*/
+	.myLevel{
+		position:relative;
+		width:100%;
+		border-bottom:1px solid $colorLightGrey;
+		padding:10px 0 0px 0;
+		padding-left:15px;
+		h1{
+			color:$colorDarkGrey;
+			font-size:14.4px;
+			font-weight:bold;
+			padding:5px 0 14px 0;
+			span{
+				padding-left:10px;
+				color:$colorBlue;
+			}
+		}
+		.progress{
+			margin-right:15px;
+			border-radius: 9px;
+			background-color:$colorLightGrey;
+			.progress-bar{
+				background-color:#2A845E;
+			}
+		}
+	}/*my Level*/
+	.myNote{
+		ul.nav-tabs{
+			height:55px;
+			li{
+				width:50%;
+				text-align:center;
+				padding:0;
+				a{
+					border:none;
+					background-color: transparent;
+					color:$colorGrey;
+					font-size:18px;
+					padding: 15px 0;
+					position:relative;
+					span{
+						display: inline-block;
+						border-radius:50%;
+						background-color:$colorRed;
+						color:white;
+						font-size:10px;
+						position:relative;
+						top:-6px;
+						left:-5px;
+						padding:0 5px;
+					}
+				}
+			}
+		}
+	}/*myNote*/
+	.item{
+		padding:10px 0 30px 0;
+		li{
+			font-size:15.2px;
+			a{	display: block;
+				padding:10px 0;
+				text-decoration:none;
+				color:$colorDarkGrey;
+				text-transform:uppercase;
+				@include transition(all 0.5s ease);
+				&:hover{
+					text-decoration:none;
+					color:$colorGrey;
+				}
+				span{
+					font-size:24px;
+					padding-right:30px;
+					display: inline-block;
+					position:relative;
+					top:2px;
+					color:#666666;
+				}
+			}
+		}
+	}/*item*/
+}/* user-profile */
+#user-trophy, #user-statics{
+	margin-top:43px;
+	margin-bottom:43px;
+	padding-top:5px;
+	.tab-name{
+		box-shadow: 0px 0px 3px lightgrey;
+		padding:18px 0 18px 0;
+		position:relative;
+		h5{
+			color:$colorDarkGrey;
+			text-transform: uppercase;
+			text-align:center;
+			font-size:13px;
+			font-weight:bold;
+		}
+	}
+	ul.nav-tabs{
+		li{
+			height:40px;
+			width:50%;
+			text-align:center;
+			padding:0;
+			a{
+				border:none;
+				background-color: transparent;
+				color:$colorGrey;
+				font-size:16px;
+				padding: 7px 0;
+			}
+		}
+		li.active{
+			border-bottom:2px solid $colorGrey;
+		}
+	}/* nav-tavs*/
+}
+#user-trophy{
+	padding-bottom:40px;
+	.row{
+		padding:10px 0;
+		.media{
+			img{
+				width: 48px;
+  				height: 54px;
+				-webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+				clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+			}
+			.media-body{
+				padding-left:10px;
+				padding-top:5px;
+				h5{
+					font-weight:bold;
+					font-size:13px;
+				}
+				p{
+					padding:7px 0;
+					font-size:11px;
+					line-height: 16px
+				}
+			}
+	    }
+	}		
+}/*trophy*/
+#user-statics{
+	padding-bottom:40px;
+	.first-level{
+		li{ 
+			color:$colorDarkGrey;
+			font-size:13px;
+			font-weight:bold;
+			padding:15px 25px;
+			border-bottom:1px solid $colorLightGrey;
+			&:last-child{
+				border:none;
+			}
+			span{
+				color:$colorRed;
+				float:right;
+				font-weight:500;
+			}
+			ul{
+				li{
+					font-weight:500;
+					font-size:12px;
+					border:none;
+					padding:9px 0 4px 0;
+					span{
+						font-weight:bold;
+					}
+				}
+			}
+			
+		}
+	}
+}/*user- statics */

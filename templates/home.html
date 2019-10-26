@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+        <title>login</title>
+        {% load static %}
+      <!-- Bootstrap -->
+        <link href="{% static "/css/bootstrap.css" %}" rel="stylesheet">
+        <!-- font awesome -->
+        <link rel="stylesheet" type="text/css" href="{% static "/css/font-awesome.min.css" %}">
+        <!-- Custom stylesheet -->
+        <link rel="stylesheet" type="text/css" href="{% static "/css/custom/style.css" %}">
+        <!-- jQuery  -->
+        <script src="{% static "/js/jquery-3.1.0.min.js" %}"></script>
+        <script src="{% static "/js/jquery-ui.min.js" %}"></script>
+        <!-- bootstrap -->
+        <script src="{% static "/js/bootstrap.min.js" %}"></script>
+         <script src="{% static "/js/auto-growing.js" %}"></script>
+        <!-- custom -->
+        <script src="{% static "/js/custom/main.js" %}"></script>
+      <style>
+        h5,h6{
+          color:black;
+          margin:10px 10px 20px 10px;
+        }
+        h4{
+          margin-bottom:15px;
+          margin-top:5px
+        }
+        h3{
+          margin-bottom:30px
+        }
+        .custom{
+
+          width:60%;
+          height:350px;
+          border:1px solid grey;
+          font-size:14px;
+          padding:10px 20px;
+          margin:0 10%;
+          display:box;
+          background-color:rgb(243,243,243);
+          color:black;
+          border-radius:40px;
+          margin:0 20%
+        }
+      </style>
+    </head>
+    <body>
+        <section class="login_page">
+            <div class="panel" >
+                <div class="head">
+                    <h2>Word Count!</h2>
+                    <h6><a href="{% url 'about' %}">About us</a></h6>
+                </div>
+                <div class="panel-body">
+                    <form class="form" role="form" method="" action="{% url 'count' %}">
+
+                        <div class="form">
+                            <textarea name="fulltext"  class="form custom" rows="20" cols="80"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn red">Submit
+                            </button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

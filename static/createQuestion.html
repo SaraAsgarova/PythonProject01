@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+        <title>Create Question</title>
+
+        <!-- Bootstrap -->
+        <link href="_templates/assets/css/bootstrap.min.css" rel="stylesheet">
+        <!-- font awesome -->
+        <link rel="stylesheet" type="text/css" href="_templates/assets/css/font-awesome.min.css">
+        <!-- Custom stylesheet -->
+        <link rel="stylesheet" type="text/css" href="_templates/assets/css/custom/style.css">
+        <!-- jQuery  -->
+        <script src="_templates/assets/js/jquery-3.1.0.min.js"></script>
+        <script src="_templates/assets/js/jquery-ui.min.js"></script>
+        <!-- bootstrap -->
+        <script src="_templates/assets/js/bootstrap.min.js"></script>
+         <script src="_templates/assets/js/auto-growing.js"></script>
+        <!-- custom -->
+        <script src="_templates/assets/js/custom/main.js"></script>
+    </head>
+    <body>
+     <header>
+        <nav>
+        <!-- fixed-search -->
+            <div class="nav-header">
+                <button type="button" class=" btn collapsedNavbar"><i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+               <h5><strong>Yeni sual</strong></h5>
+            </div>
+        <!--  Navbar- collapse -->
+        <div class="background"></div>
+            <div id="navbar">
+                <div class="heading">
+                   <img class="back-img" src="_templates/assets/images/people/3.jpg" alt="">
+                   <div class="blur"></div>
+                   <div class="head">
+                       <button type="button" class=" btn back"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+                       <a href="settings-account.html"><i class="fa fa-cog" aria-hidden="true"></i></a>
+                   </div>
+                   <a class="media" href="profile.html">
+                        <div class="media-left">
+                            <img src="_templates/assets/images/people/3.jpg">            
+                        </div>
+                        <div class="media-body">
+                            <ul>
+                                <li><strong>Səbinə Həsənzadə</strong></li>
+                                <li>sabinahasan657</li>
+                                <li>Səviyyə: <strong>Ustad</strong></li>
+                            </ul>
+                            <div class="point">
+                                <h1>720</h1>
+                                <p>xal</p>
+                            </div>
+                        </div>
+                    </a>
+                </div><!-- heading-->
+                <div class="content">
+                    <div class="myNote">
+                        <ul class="nav nav-tabs">
+                            <li>
+                                <a href="myNotification.html"><i class="fa fa-bell-o" aria-hidden="true"></i><span>2</span></a>
+                            </li>
+                            <li>
+                                <a href="myMessage.html"><i class="fa fa-comments-o" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>     
+                    </div>
+                    <div class="item">
+                        <ul>
+                            <li><a href="top-users.html"><span><i class="fa fa-star" aria-hidden="true"></i></span>Top istifadəçilər</a></li>
+                            <li><a href="top-schools.html"><span><i class="fa fa-university" aria-hidden="true"></i></span>Top məktəblər</a></li>
+                            <li><a href="profile-class.html"><span><i class="fa fa-list" aria-hidden="true"></i></span>Siniflər</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="contact.html">Bizimlə əlaqə</a></li>
+                            <li><a href="about.html">Haqqımızda</a></li>
+                            <li><a href="#">Digital Education</a></li>
+                            <li><a href="#l">E-University</a></li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="#"><span><i class="fa fa-camera" aria-hidden="true"></i></span>Hesabdan çıxış</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!-- nav bar collapsed -->
+        </nav>
+    </header>
+
+    <!--================== Create Question==================== -->
+    <section class="createQuestion">
+        <form action="">
+            <div class="form-group ">
+                <select class="leftSelect">
+                    <option selected="selected">Dərəcə</option>
+                    <option value="">Sinif 1-4</option>
+                    <option value="">Sinif 5-9</option>
+                    <option value="">Sinif 10-11</option>
+                    <option value="">Bakalavr</option>
+                    <option value="">Magistr</option>
+                </select>
+                <select class="rightSelect">
+                    <option selected="selected">Fənn</option>
+                    <option value="">Riyaziyyat</option>
+                    <option value="">Riyaziyyat</option>
+                    <option value="">Riyaziyyat</option>
+                    <option value="">Riyaziyyat</option>
+                    <option value="">Riyaziyyat</option>
+                    <option value="">Riyaziyyat</option>
+                    <option value="">Riyaziyyat</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <select>
+                    <option selected="selected">10 xal (minimal)</option>
+                    <option value="">20 xal</option>
+                    <option value="">30 xal</option>
+                    <option value="">50 xal</option>
+                    <option value="">60 xal</option>
+                    <option value="">70 xal</option>
+                    <option value="">80 xal</option>
+                    <option value="">90 xal</option>
+                </select>
+            </div>
+            <div class="property">
+                <ul class="list-inline leftSide ">
+                    
+                    <li><a class="bold" role="button"><i class="fa fa-bold"></i></a></li>
+                    <li><a class="underline" role="button"><i class="fa fa-underline"></i></a></li>
+                   
+                </ul>
+                <ul class="list-inline rightSide">
+                    <li><a href="#symbol-list" class="symbolIcon" data-toggle="collapse"><i class="fa fa-paragraph"></i></a></li>
+                    <li><a href="#math-list" class="mathIcon" data-toggle="collapse"><i class="fa fa-superscript"></i></a></li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-camera" aria-hidden="true"></i>
+                            <input type="file" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="container-fluid">
+                <textarea class="qu-area" rows="7" placeholder="Sual..."></textarea>
+
+            <!-- symbol list -->
+                <div class="symbolList collapse" id="symbol-list">
+                    <p>Xüsusi işarələr</p>
+                    <ul class="list">
+                        <li>
+                            <a class="btn symbol">&empty;</a>
+                        </li>
+                        <li>
+                            <a class="btn symbol">&exist;</a>
+                        </li>
+                        <li>
+                            <a class="btn symbol">&#8721;</a>
+                        </li>
+                        <li>
+                            <a class="btn symbol">&nabla;</a>
+                        </li>
+                        <li>
+                            <a class="btn symbol">&isin;</a>
+                        </li>
+                        <li>
+                            <a class="btn symbol">&notin;</a>
+                        </li>
+                        <li>
+                            <a class="btn symbol">&ni;</a>
+                        </li>
+                        <li>
+                            <a class="btn symbol">&int;</a>
+                        </li>
+                         <li>
+                            <a class="btn symbol">&infin;</a>
+                        </li>
+                         <li>
+                            <a class="btn symbol">&and;</a>
+                        </li>
+                        <li>
+                            <a class="btn symbol">&or;</a>
+                        </li>
+                        <li>
+                            <a class="btn symbol">&cap;</a>
+                        </li>
+                        <li>
+                            <a class="btn symbol">&empty;</a>
+                        </li>
+                        <li>
+                            <a class="btn symbol">&exist;</a>
+                        </li>
+                        <li>
+                            <a class="btn symbol">&#8721;</a>
+                        </li>
+                        <li>
+                            <a class="btn symbol">&nabla;</a>
+                        </li>
+                        <li>
+                            <a class="btn symbol">&isin;</a>
+                        </li>
+                        <li>
+                            <a class="btn symbol">&notin;</a>
+                        </li>
+                        <li>
+                            <a class="btn symbol">&ni;</a>
+                        </li>
+                        <li>
+                            <a class="btn symbol">&int;</a>
+                        </li>
+                    </ul>
+                </div><!-- /.list symbol List -->
+                <div class="mathList collapse" id="math-list">
+                    <p>Düstur palitrası</p>
+                    <div class="formula">
+                        <img src="_templates/assets/images/dustur.png">
+                    </div>
+                    <ul class="list">
+                        <li>
+                            <a class="math" data-formula="2<4"><img src="_templates/assets/images/Formula icons/Screenshot_1.png"></a>
+                        </li>
+                        <li>
+                            <a class="math" data-formula="2<4"><img src="_templates/assets/images/Formula icons/Screenshot_2.png"></a>
+                        </li>
+                        <li>
+                            <a class="math" data-formula="2<4"><img src="_templates/assets/images/Formula icons/Screenshot_3.png"></a>
+                        </li>
+                        <li>
+                            <a class="math" data-formula="2<4"><img src="_templates/assets/images/Formula icons/Screenshot_4.png"></a>
+                        </li>
+                        <li>
+                            <a class="math" data-formula="2<4"><img src="_templates/assets/images/Formula icons/Screenshot_5.png"></a>
+                        </li>
+                        <li>
+                            <a class="math" data-formula="2<4"><img src="_templates/assets/images/Formula icons/Screenshot_6.png"></a>
+                        </li>
+                        <li>
+                            <a class="math" data-formula="2<4"><img src="_templates/assets/images/Formula icons/Screenshot_7.png"></a>
+                        </li>
+                        <li>
+                            <a class="math" data-formula="2<4"><img src="_templates/assets/images/Formula icons/Screenshot_8.png"></a>
+                        </li>
+                        <li>
+                            <a class="math" data-formula="2<4"><img src="_templates/assets/images/Formula icons/Screenshot_9.png"></a>
+                        </li>
+                        <li>
+                            <a class="math" data-formula="2<4"><img src="_templates/assets/images/Formula icons/Screenshot_10.png"></a>
+                        </li>
+                        <li>
+                            <a class="math" data-formula="2<4"><img src="_templates/assets/images/Formula icons/Screenshot_11.png"></a>
+                        </li>
+
+                        <li>
+                            <a class="math" data-formula="2<4"><img src="_templates/assets/images/Formula icons/Screenshot_12.png"></a>
+                        </li>
+                        <li>
+                            <a class="math" data-formula="2<4"><img src="_templates/assets/images/Formula icons/Screenshot_13.png"></a>
+                        </li>
+                        <li>
+                            <a class="math" data-formula="2<4"><img src="_templates/assets/images/Formula icons/Screenshot_14.png"></a>
+                        </li>
+
+                        <li>
+                            <a class="math" data-formula="2<4"><img src="_templates/assets/images/Formula icons/Screenshot_15.png"></a>
+                        </li>
+                         <li>
+                            <a class="math" data-formula="2<4"><img src="_templates/assets/images/Formula icons/Screenshot_16.png"></a>
+                        </li>
+                    </ul>
+                <textarea class="formula-area" rows="4" placeholder="Düstur..."></textarea>
+                </div><!-- /.list math List -->
+
+
+                 
+                <ul class="list-inline upload-img text-right">
+                    <li>
+                        <div class="image-box">
+                            <img src="_templates/assets/images/m.png" alt="about picture">
+                            <span><p>Şəkil yüklənir</p></span>
+                        </div>
+                        <!-- /.image-box -->
+                    </li>
+                    <li>
+                        <div class="image-box canBeDeleted">
+                           <img src="_templates/assets/images/m.png" alt="about picture">
+                            <span><i class="fa fa-trash"></i></span>
+                        </div>
+                        <!-- /.image-box -->
+                    </li>
+                    <li>
+                        <div class="image-box canBeDeleted">
+                            <img src="_templates/assets/images/m.png" alt="about picture">
+                            <span><i class="fa fa-trash"></i></span>
+                        </div>
+                        <!-- /.image-box -->
+                    </li>
+                </ul><!--- uploading images -->
+            </div>
+
+    </section>
+    <footer>
+        <a href="#" class="btn left-icon"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+        <button type="submit" class="btn middle">SORUŞ</button>
+        </form>
+    </footer>
+    </body>
+</html>
